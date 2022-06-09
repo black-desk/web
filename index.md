@@ -4,6 +4,15 @@ You can use the [editor on GitHub](https://github.com/deepin-community/web/edit/
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+{% assign doclist = site.pages | sort: 'url' %}
+<ul>
+  {% for doc in doclist %}
+  {% if doc.name contains '.md' or doc.name contains '.html' %}
+  <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
