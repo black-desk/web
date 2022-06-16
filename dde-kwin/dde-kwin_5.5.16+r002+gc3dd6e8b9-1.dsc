@@ -10,11 +10,11 @@ Build-Depends: debhelper
 Package-List:
  dde-kwin deb metapackages standard arch=any
 Checksums-Sha1:
- 473085ab684346b9e70973a8889de7b7798ff52e 1496 dde-kwin_5.5.16+r002+gc3dd6e8b9.orig.tar.xz
- 8384d885fda1222bb3d5a64f9f2787dbd9052af5 1456 dde-kwin_5.5.16+r002+gc3dd6e8b9-1.debian.tar.xz
+ 47321d768423bba26bb47b8c3144b2ee48297b2e 1516 dde-kwin_5.5.16+r002+gc3dd6e8b9.orig.tar.xz
+ 6029247ebd8110e8e38284f0dfa3a47037a9146c 1480 dde-kwin_5.5.16+r002+gc3dd6e8b9-1.debian.tar.xz
 Checksums-Sha256:
- 3563bc461f1c4f31cd79d3e6e44d3067c40090fa74e274c87bc186e800b31414 1496 dde-kwin_5.5.16+r002+gc3dd6e8b9.orig.tar.xz
- ee382b8f0f5e527888840aa8506451ada7f2b4bdb094f57d1a88dc4d68f07014 1456 dde-kwin_5.5.16+r002+gc3dd6e8b9-1.debian.tar.xz
+ 68c9e789fdcaf3be659ff21228c3959f4b8de5b97a5c4fff8415c0f3f437d1ef 1516 dde-kwin_5.5.16+r002+gc3dd6e8b9.orig.tar.xz
+ c85b40e56b114f037437a8afba3de8e2b162d5fbd78f5237cf7cdfd6eeca1b8e 1480 dde-kwin_5.5.16+r002+gc3dd6e8b9-1.debian.tar.xz
 Files:
- dc42e7d80d4ad5227a0b5442b20db1a4 1496 dde-kwin_5.5.16+r002+gc3dd6e8b9.orig.tar.xz
- 57638a3d0feba0b37779117d6e9b7f81 1456 dde-kwin_5.5.16+r002+gc3dd6e8b9-1.debian.tar.xz
+ 863369949ce4016fa8e6494c39f78916 1516 dde-kwin_5.5.16+r002+gc3dd6e8b9.orig.tar.xz
+ 12d3182e2836435feaaf4d04c277e1a1 1480 dde-kwin_5.5.16+r002+gc3dd6e8b9-1.debian.tar.xz
