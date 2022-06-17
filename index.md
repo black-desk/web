@@ -1,46 +1,37 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/deepin-community/web/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## 使用 dde 构建仓库
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+deepin 开源项目目前支持以下发行版:
 
-{% assign doclist = site.pages | sort: 'url' %}
-<ul>
-  {% for doc in doclist %}
-  {% if doc.name contains '.md' or doc.name contains '.html' %}
-  <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
-  {% endif %}
-  {% endfor %}
-</ul>
+- deepin
+- debian sid
+- archlinux
 
-### Markdown
+目前仅支持构建默认分支代码，未来会提供各种需求定制的构建仓库。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+想要添加使用构建仓库，需要将以下地址添加到发行版的源列表：
 
-```markdown
-Syntax highlighted code block
+- deepin
 
-# Header 1
-## Header 2
-### Header 3
+  `deb [trusted=yes] https://deepin-community.github.io/deepin-dde-repo apricot main`
 
-- Bulleted
-- List
+- debian sid
 
-1. Numbered
-2. List
+  ```text
+  deb [trusted=yes] https://deepin-community.github.io/debian-sid-dde-repo sid main
+  deb [trusted=yes] https://deepin-community.github.io/debian-sid-dde-deps-repo sid main
+  ```
 
-**Bold** and _Italic_ and `Code` text
+- archlinux
 
-[Link](url) and ![Image](src)
-```
+  ```text
+  [deepin]
+  SigLevel = Never
+  https://deepin-community.github.io/arch-dde-repo/$repo
+  ```
+## 注意事项
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+由于构建版本会比稳定版本更新更加频繁，且依赖关系可能经常发生变动，不推荐在生产环境使用。
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/deepin-community/web/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+我们正在准备一系列的工具，可以方便快速的创建出对应的基础环境和仓库，在不影响宿主机的情况下，为开发者进行快速调试。
